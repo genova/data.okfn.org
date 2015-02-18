@@ -210,11 +210,21 @@ exports.toolsDataProxy = function(req, res) {
 // ========================================================
 
 exports.data = function(req, res) {
+  /* genova : I comment this line 
   datasets = catalog.query().filter(function(dp) {
     return !dp.isCore;
   });
+  */ 
   coreDatasets = catalog.byOwner('core');
-  total = datasets.length;
+  // genova : I added this stuff
+  middle =  Math.floor(coreDatasets.length/2);
+  datasets = coreDatasets.slice(0, middle)
+  coreDatasets =coreDatasets.slice(middle, coreDatasets.length)
+  console.log('here we are'  + datasets.length)
+  console.log('here we are'  + coreDatasets.length)
+  // End stuff
+ 
+  total = datasets.length + coreDatasets.length; 
   res.render('data/index.html', {
     total: total,
     datasets: datasets,

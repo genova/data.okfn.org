@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
   <title> 
     {% block title%}{{title}}{% endblock %}
-    - Frictionless Open Data
+    - Open Data Senegal 
   </title>
-  <meta name="author" content="Open Knowledge Foundation">
-  <meta name="description" content="{% block title%}{{title}}{% endblock %}. Frictionless open data. Open data with tools to make it easy to use. Managed by the Open Knowledge Foundation">
-  <meta name="keywords" content="open data,data package,reference data,indicators">
+  <meta name="author" content="Open Knowledge Sénégal">
+  <meta name="description" content="{% block title%}{{title}}{% endblock %}. Portails des données ouvertes du Sénégal avec des outils pour rendre facile l'utilisation des données. Géré par l'Open Knowledge Sénégal">
+  <meta name="keywords" content="Sénégal,senegal,donnée,donnés ouvertes,open data,data package,reference data,indicators,population">
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
+  <link rel="icon" href="img/favicon.ico" />
   <link href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
@@ -34,11 +34,37 @@
 
   <link href="http://dataprotocols.org/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/style.css" />
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
 </head>
 <body>
 <!-- OKF Panel -->
 <div id="okf-panel" class="collapse">
-  <iframe src="https://assets.okfn.org/themes/okfn/okf-panel.html"></iframe>
+  <div class="okf-panel container">
+        <div class="row">
+          <div class="span4">
+            <div class="border logo">
+              <a href="http://sn.okfn.org/"><img src="img/ok_logo.jpg"></a>
+            </div>
+          </div>
+          <div class="span5">
+            <div class="border">
+              <h2>&nbsp;</h2>
+              <ul>
+                <li><a href="http://sn.okfn.org">Blog</a></li>
+                <li><a href="https://twitter.com/okfnsn">Twitter</a></li>
+                <li><a href="https://www.facebook.com/senegalouvert">Facebook</a></li>
+                <li><a href="https://lists.okfn.org/mailman/listinfo/okfn-sn">Liste de discussion </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 </div>
 <div class="okfn-ribbon">
   <a data-toggle="collapse" data-target="#okf-panel" href="http://okfnlabs.org/" target="_blank">An Open Knowledge Foundation Labs Project</a>
@@ -58,15 +84,14 @@
 <div class="navbar">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/"><img src="http://assets.okfn.org/p/data/img/logo.png" alt="" /></a>
+      <a class="brand" href="/"><img src="../../img/logo.png" alt="" /></a>
       <ul class="nav pull-right">
-        <li><a href="/tools">Tools</a></li>
-        <li><a href="/data">Data</a></li>
-        <li><a href="/standards">Standards</a></li>
-        <li><a href="/doc/">Docs</a></li>
-        <li><a href="/contribute">Contribute</a></li>
-        <li><a href="/roadmap">Roadmap</a></li>
-        <li><a href="/vision">Vision</a></li>
+        <li><a href="/tools"><i class="icon-puzzle-piece"></i>Outils</a></li>
+        <li><a href="/data"><i class="icon-cloud"></i>Données</a></li>
+        <li><a href="/standards"><i class="icon-certificate"></i>Normes</a></li>
+        <li><a href="/doc/"><i class="icon-book"></i>Docs</a></li>
+        <li><a href="/contribute"><i class="icon-group"></i>Contribuer</a></li>
+        <li><a href="/vision"><i class="icon-rocket"></i>Vision</a></li>
       </ul>
     </div>
   </div>
@@ -81,16 +106,16 @@
 <footer>
   <div class="container">
     <p>
-      This service is run by the
-      <a href="http://okfn.org" title="Open Knowledge Foundation">
+      Ce service est géré par 
+      <a href="http://sn.okfn.org" title="Open Knowledge Senegal">
         <img src="http://assets.okfn.org/p/okfn/img/okfn-logo-landscape.png" alt="" style="height: 25px;" /></a>
-      &nbsp;
-      <i class="icon-github"></i> <a href="http://github.com/okfn/data.okfn.org">Source Code</a>
-      &nbsp;
-      <i class="icon-twitter"></i> <a href="https://twitter.com/okfnlabs" title="Open Knowledge Foundation Labs on Twitter">@okfnlabs</a>
+      &ndash;
+      <a href="https://github.com/senegalouvert/data.okfn.org">Source Code</a>
+      &ndash;
+      <a href="https://twitter.com/okfnsn" title="Open Knowledge Senegal Twitter">@okfnsn</a>
     </p>
     <p class="projects">
-      Related Projects at the Foundation
+      Les projets liés  
       <a href="http://schoolofdata.org/" title="School of Data - Learn Data Skills">
         <img src="http://assets.okfn.org/p/schoolofdata/img/logo.png" alt="School of Data" /></a>
       <a href="http://okfnlabs.org/" title="Open Knowledge Foundation Labs">
@@ -141,7 +166,7 @@
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33874954-11']);
+  _gaq.push(['_setAccount', 'UA-41933617-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
